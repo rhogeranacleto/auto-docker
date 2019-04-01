@@ -5,4 +5,4 @@ ENV POSTGRES_PASSWORD node@1234
 
 COPY init.sh /docker-entrypoint-initdb.d/
 COPY init.sql /
-COPY ./sqls/*.sql /sqls/
+COPY ./sqls/**/*.sql /sqls/
